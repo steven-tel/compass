@@ -5,6 +5,7 @@
 
 [![YouTube](https://img.shields.io/badge/YouTube-Watch%20Video-red?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=46OxPEXMIMY&t=1s)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Website-blue?logo=googlechrome&logoColor=white)](https://compass-frontend-267298975923.us-central1.run.app/)
+![All Things Agentic Hackathon](https://img.shields.io/badge/%23AllThingsAgenticHackathon-purple)
 
 The screenless AI tutor that helps students think, focus, and find their own way.
 
@@ -62,6 +63,7 @@ Images and env vars: [backend/README.md](backend/README.md) and [frontend/README
 
 Compass is based on the [gemini-live sample repository](https://github.com/google-gemini/gemini-live-api-examples). We would like to thank its authors and maintainers for their foundational work and inspiration.
 
+This project was developed specifically for the All Things Agentic Hackathon, organized by Google. #AllThingsAgenticHackathon
 
 
 
