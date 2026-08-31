@@ -5,11 +5,15 @@
 
 A screenless AI tutor that helps students learn, stay focused, and build confidence.
 
+
+## Architecture
+
+<p align="center">
+  <img src="assets/architecture_compass-dark.png" alt="Architecture Diagram" width="600"/>
+</p>
+
+
 ## Quick start
-
-
-
-
 
 **Backend**:
 
