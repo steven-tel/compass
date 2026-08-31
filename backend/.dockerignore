@@ -1,0 +1,16 @@
+# Secrets stay on the host / Cloud Run. Never copy .env or key files.
+
+.git
+.venv
+__pycache__
+**/__pycache__
+*.pyc
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*credentials*.json
+*service-account*.json
+test_exercise_detector.py
+README.md

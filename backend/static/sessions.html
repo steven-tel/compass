@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework Sessions</title>
+    <link rel="stylesheet" href="/static/style.css?v=7" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Homework sessions</h1>
+        <div style="display: flex; gap: 10px; align-items: center">
+          <a href="/concepts" class="link-btn">Concepts</a>
+          <a href="/" class="link-btn">Tutor</a>
+          <button id="refreshBtn" class="btn">Refresh</button>
+        </div>
+      </header>
+
+      <p id="session-status" class="note">Loading sessions…</p>
+      <div id="session-list" class="session-list"></div>
+    </div>
+    <script src="/static/sessions.js?v=7"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session</title>
+    <link rel="stylesheet" href="/static/style.css?v=7" />
+  </head>
+  <body>
+    <div class="container session-detail-container">
+      <header>
+        <h1 id="session-title">Session</h1>
+        <div style="display: flex; gap: 10px; align-items: center">
+          <a href="/sessions" class="link-btn">All sessions</a>
+          <a href="/concepts" class="link-btn">Concepts</a>
+          <a href="/" class="link-btn">Tutor</a>
+          <button id="deleteBtn" class="btn danger">Delete</button>
+        </div>
+      </header>
+
+      <p id="session-status" class="note">Loading session…</p>
+      <div id="session-detail" class="session-detail-grid hidden">
+        <section class="session-info-panel">
+          <h2>Session details</h2>
+          <dl id="session-info" class="session-details"></dl>
+
+          <div class="exercise-panel-header">
+            <h2>Exercises</h2>
+            <button id="detectBtn" class="btn" type="button">Detect exercises</button>
+          </div>
+          <p id="exercise-status" class="note">Loading exercises…</p>
+          <div id="exercise-list" class="exercise-list"></div>
+        </section>
+        <section class="session-transcript-panel">
+          <h2>Transcript</h2>
+          <div id="session-transcript" class="chat-log session-transcript"></div>
+        </section>
+      </div>
+    </div>
+    <script src="/static/session-detail.js?v=7"></script>
+  </body>
+</html>

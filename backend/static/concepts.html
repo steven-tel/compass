@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concepts</title>
+    <link rel="stylesheet" href="/static/style.css?v=8" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Concepts</h1>
+        <div style="display: flex; gap: 10px; align-items: center">
+          <a href="/sessions" class="link-btn">Sessions</a>
+          <a href="/" class="link-btn">Tutor</a>
+          <button id="refreshBtn" class="btn">Refresh</button>
+        </div>
+      </header>
+
+      <p id="concept-status" class="note">Loading concepts…</p>
+      <div id="concept-list" class="concept-grid"></div>
+    </div>
+    <script src="/static/concepts.js?v=8"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>Compass waiting</title>
+  <defs>
+    <mask id="compass-wait-needle-mask">
+      <rect width="256" height="256" fill="white"/>
+      <circle cx="128" cy="128" r="9" fill="black"/>
+    </mask>
+    <style>
+      .needle {
+        transform-origin: 128px 128px;
+        animation: wobble 2.4s ease-in-out infinite;
+      }
+      @keyframes wobble {
+        0%, 100% { transform: rotate(-12deg); }
+        50% { transform: rotate(18deg); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .needle { animation: none; }
+      }
+    </style>
+  </defs>
+  <circle cx="128" cy="128" r="84" fill="none" stroke="#ffffff" stroke-width="10"/>
+  <g class="needle">
+    <path
+      d="M177 79 L141 145 L79 177 L115 111 Z"
+      fill="#ffffff"
+      mask="url(#compass-wait-needle-mask)"
+    />
+  </g>
+</svg>

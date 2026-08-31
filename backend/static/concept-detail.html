@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concept</title>
+    <link rel="stylesheet" href="/static/style.css?v=8" />
+  </head>
+  <body>
+    <div class="container session-detail-container">
+      <header>
+        <h1 id="concept-title">Concept</h1>
+        <div style="display: flex; gap: 10px; align-items: center">
+          <a href="/concepts" class="link-btn">All concepts</a>
+          <a href="/sessions" class="link-btn">Sessions</a>
+          <a href="/" class="link-btn">Tutor</a>
+        </div>
+      </header>
+
+      <p id="concept-status" class="note">Loading concept…</p>
+      <div id="concept-detail" class="hidden">
+        <section class="session-info-panel">
+          <dl id="concept-info" class="session-details"></dl>
+        </section>
+        <h2 class="concept-exercises-heading">Exercises done</h2>
+        <p id="exercise-status" class="note hidden"></p>
+        <div id="exercise-list" class="exercise-list"></div>
+      </div>
+    </div>
+    <script src="/static/concept-detail.js?v=8"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+    <link rel="stylesheet" href="/static/style.css?v=7" />
+  </head>
+  <body>
+    <div class="container session-detail-container">
+      <header>
+        <h1 id="exercise-title">Exercise</h1>
+        <div style="display: flex; gap: 10px; align-items: center">
+          <a id="session-link" href="/sessions" class="link-btn">Homework session</a>
+          <a href="/sessions" class="link-btn">All sessions</a>
+          <a href="/concepts" class="link-btn">Concepts</a>
+          <a href="/" class="link-btn">Tutor</a>
+        </div>
+      </header>
+
+      <p id="exercise-status" class="note">Loading exercise…</p>
+      <div id="exercise-detail" class="hidden">
+        <p id="session-banner" class="session-banner"></p>
+        <div class="session-detail-grid">
+          <section class="session-info-panel">
+            <h2>Attempt</h2>
+            <dl id="exercise-info" class="session-details"></dl>
+          </section>
+          <section class="session-transcript-panel">
+            <h2>What happened</h2>
+            <div id="exercise-events" class="exercise-events"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="/static/exercise-detail.js?v=7"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="256"
+    height="256"
+    viewBox="0 0 256 256">
+
+    <defs>
+        <mask id="needleMask">
+            <rect
+                x="0"
+                y="0"
+                width="256"
+                height="256"
+                fill="white"/>
+
+            <!-- Transparent center hole -->
+            <circle
+                cx="128"
+                cy="128"
+                r="9"
+                fill="black"/>
+        </mask>
+    </defs>
+
+    <!-- Smaller compass circle -->
+    <circle
+        cx="128"
+        cy="128"
+        r="84"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="10"/>
+
+    <!-- Long arrow with clear gap from circle -->
+    <path
+        d="M177 79
+           L141 145
+           L79 177
+           L115 111
+           Z"
+        fill="#FFFFFF"
+        mask="url(#needleMask)"/>
+
+</svg>
