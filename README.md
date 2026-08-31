@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="assets/logo.png" alt="Project Logo" width="240"/>
+  <img src="assets/compass-wordmark-white.png" alt="Project Logo" width="240"/>
 </p>
 
 A screenless AI tutor that helps students learn, stay focused, and build confidence.
