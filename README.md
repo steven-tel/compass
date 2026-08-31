@@ -3,6 +3,9 @@
   <img src="assets/compass-wordmark-white.png" alt="Project Logo" width="240"/>
 </p>
 
+[![YouTube](https://img.shields.io/badge/YouTube-Watch%20Video-red?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=46OxPEXMIMY&t=1s)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Website-blue?logo=googlechrome&logoColor=white)](https://compass-frontend-267298975923.us-central1.run.app/)
+
 The screenless AI tutor that helps students think, focus, and find their own way.
 
 ## Description
@@ -54,6 +57,11 @@ docker compose up --build
 ```
 
 Images and env vars: [backend/README.md](backend/README.md) and [frontend/README.md](frontend/README.md).
+
+## Acknowledgements
+
+Compass is based on the [gemini-live sample repository](https://github.com/google-gemini/gemini-live-api-examples). We would like to thank its authors and maintainers for their foundational work and inspiration.
+
 
 
 
