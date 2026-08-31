@@ -32,7 +32,6 @@ from models.exercise import Exercise
 
 _APP_DIR = Path(__file__).resolve().parent
 load_dotenv(_APP_DIR / ".env")
-load_dotenv(_APP_DIR.parent / ".env")
 
 logger = logging.getLogger(__name__)
 

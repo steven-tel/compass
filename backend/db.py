@@ -17,7 +17,6 @@ from models.homework_session import HomeworkSession, SessionStatus
 
 _APP_DIR = Path(__file__).resolve().parent
 load_dotenv(_APP_DIR / ".env")
-load_dotenv(_APP_DIR.parent / ".env")
 
 logger = logging.getLogger(__name__)
 
@@ -41,7 +40,7 @@ def get_db() -> firestore.Client:
     global _db
     if not PROJECT:
         raise RuntimeError(
-            "FIRESTORE_PROJECT is not set. Copy .env.example to .env and add your GCP project id."
+            "FIRESTORE_PROJECT is not set. Copy backend/.env.example to backend/.env and add your GCP project id."
         )
     if _db is None:
         with _db_lock:

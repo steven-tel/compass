@@ -31,7 +31,6 @@ from twilio_handler import TwilioHandler
 _APP_DIR = Path(__file__).resolve().parent
 _STATIC_DIR = _APP_DIR / "static"
 load_dotenv(_APP_DIR / ".env")
-load_dotenv(_APP_DIR.parent / ".env")
 
 # Configure logging - DEBUG for our modules, INFO for everything else
 logging.basicConfig(level=logging.INFO)

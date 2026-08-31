@@ -15,7 +15,7 @@ uv run python backend/main.py
 
 Or `cd backend && uv run python main.py`. Listens on `http://0.0.0.0:8000` (or `$PORT`).
 
-Env file: repo-root `.env` (see `.env.example`). Do not commit it.
+Env file: `backend/.env` (see `backend/.env.example`). Do not commit it.
 
 ## Build
 
@@ -26,13 +26,13 @@ docker build -t compass-backend ./backend
 ## Run
 
 ```bash
-docker run --rm -p 8000:8000 --env-file .env -e PORT=8000 compass-backend
+docker run --rm -p 8000:8000 --env-file backend/.env -e PORT=8000 compass-backend
 ```
 
 Firestore uses Application Default Credentials. To mount a key file instead of baking it in:
 
 ```bash
-docker run --rm -p 8000:8000 --env-file .env \
+docker run --rm -p 8000:8000 --env-file backend/.env \
   -e PORT=8000 \
   -e GOOGLE_APPLICATION_CREDENTIALS=/secrets/gcp.json \
   -v "$GOOGLE_APPLICATION_CREDENTIALS:/secrets/gcp.json:ro" \
@@ -47,7 +47,7 @@ docker run --rm -p 8000:8000 --env-file .env \
 | `PORT` | no | no | Cloud Run sets this. Image default `8080` |
 | `MODEL` | no | no | Live model id |
 | `EXERCISE_DETECTOR_MODEL` | no | no | Post-session analysis |
-| `FIRESTORE_PROJECT` | no | yes | GCP project id. Set in `.env`, not in code |
+| `FIRESTORE_PROJECT` | no | yes | GCP project id. Set in `backend/.env`, not in code |
 | `FIRESTORE_DATABASE` | no | no | Default `compas-database` |
 | `GOOGLE_APPLICATION_CREDENTIALS` | path | no | Only if you mount a key |
 | `TWILIO_ACCOUNT_SID` | yes | no | Phone integration |
