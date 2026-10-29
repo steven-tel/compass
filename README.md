@@ -4,7 +4,6 @@
 </p>
 
 [![YouTube](https://img.shields.io/badge/YouTube-Watch%20Video-red?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=46OxPEXMIMY&t=1s)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Website-blue?logo=googlechrome&logoColor=white)](https://compass-frontend-267298975923.us-central1.run.app/)
 ![All Things Agentic Hackathon](https://img.shields.io/badge/%23AllThingsAgenticHackathon-purple)
 
 The screenless AI tutor that helps students think, focus, and find their own way.
